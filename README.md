@@ -1,16 +1,24 @@
-# VS_project2
-subproject for "Python for Biologists HT22"
+# VS_project1
+project for "Python for Biologists HT22"
 
 ## Program aim
 can be used to combine RNAseq and Proteomics data 
 
-## How to run
-python merging_data.py
+## To install required libraries with conda
+* conda install -c anaconda pandas
+* conda install numpy
+* conda install -c bioconda bioinfokit
 
-## Required libraries 
-* import pandas as pd
-* import numpy as np
-* from bioinfokit import analys, visuz
+## For test run one can create and use virtual environment
+1. Open Anaconda Promt
+2. Navigate to folder VS_project1 (cloned using GIT bash)
+3. Create test environment using command: `> conda env create -n demo_env --file environment.yml`
+4. To activate this environment, use `> conda activate demo-env`
+5. To deactivate an active environment, use `> conda deactivate`
+6. To remove test environment, use `> conda env remove -n demo-env`
+
+## How to run
+`python merging_data.py`
 
 ## Files used in the program
 Located in Folder "supp_files"
